@@ -6,3 +6,105 @@ body{
 h1, h2{
     font-family: 'Raleway', sans-serif;
 }
+
+/* this changes  the background color of the page  and adds padding*/
+.container{ 
+    border:4px solid #ffff00;
+    width:100%;	
+    margin:auto;
+    max-width: 1200px;
+    min-width: 600px;
+    padding:10px;
+}
+
+
+/*nav ul li{	
+    display:inline;
+}
+
+nav ul{    
+    padding-left:0;
+    list-style:none;	
+}
+
+/* this removes the padding left side of the  nav ul , dont specify because it it wont do anything */
+
+
+header{  /* this gives a radius  to the corners of the header  and colours it */
+    background-color: #ffff00;	
+    border-radius: 8px;
+}
+
+nav ul li{	/* this makes the items  in the nav ul list inline puts 10px between items and adds a line between them*/
+    display:inline;
+    padding-left:10px;
+    padding-right:10px;
+    border-left:1px solid #7E8AA2;
+}
+
+nav li a:hover{    /*this changes the color of the item when hovered over */
+    color: #7E8AA2;	
+}
+
+
+
+nav li:first-child{ /* this removes the the border on the "home"  item so there is no line*/
+    border-left:none;	
+}
+
+/* makes the "Your Name" part underline when you hover over it it goes "white" you can also write "none" */
+header h1 a{
+    color:#fff;
+    text-decoration: none;
+}
+header h1 a:hover{
+    text-decoration: none;
+}
+#logo{
+    padding:10px;
+}
+
+main{  /*displays all inline  so the text is next to the logo */
+    display:flex;
+    gap: 15px;  /*this makes it so that there is some padding still*/
+    justify-content:space-between;
+}
+
+
+.sidebar{ /*creates a sidebar with rounded corners with padding and a thin rounded grey border*/
+    padding:20px 40px;	
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-top: 70px;
+    flex: 1 1 auto; /*grow, shrink then populate to the size it wants to be*/
+ }
+
+ main{
+    display:flex;
+    gap: 15px;
+}
+
+.resize-img{  /*If the image is resized of the Big Dish fit into the size of its container*/
+    width:100%;
+    height:100%;
+}
+
+footer{  /*makes grey border on top. it makes it have a margin around it makes the very small and italic and centres */
+    border-top:1px solid #ccc;
+    margin:20px 10px 10px 0;
+    font-size:0.8em;
+    text-align:center;
+    font-style:italic;
+}
+
+section{
+    flex:1 1 auto;
+}
+
+.sidebar{
+    flex:0 0 200px;
+}
+
+.leftsidebar{  /* In this we are not making it grow or shrink and making it 200px wide */
+    flex:0 0  200px;
+}
